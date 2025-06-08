@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pokégotchi</h1>
+
+        <div class="pokemon-display">
+            <div class="game-over-overlay" id="game-over-overlay"></div>
+            <button class="btn new-pokemon-btn" id="new-pokemon-btn">Get New Pokémon</button>
+            <div class="status" id="status">Healthy</div>
+            <div id="loading">
+                <div class="loader">
+                    <div class="pokeball"></div>
+                    <div class="pokeball-button"></div>
+                </div>
+            </div>
+            <img id="pokemon-image" class="pokemon-image" style="display: none;" alt="Pokémon">
+            <div id="pokemon-name" class="pokemon-name" style="display: none;">
+                <span id="display-name"></span>
+                <span class="edit-icon">✏️</span>
+                <input type="text" id="nickname-input" class="nickname-input" maxlength="20">
+            </div>
+
+            <div class="stats">
+                <div class="stat hunger">
+                    <div class="stat-name">Hunger</div>
+                    <div class="stat-value" id="hunger-value">100%</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="hunger-bar" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="stat happiness">
+                    <div class="stat-name">Happiness</div>
+                    <div class="stat-value" id="happiness-value">100%</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="happiness-bar" style="width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="stat energy">
+                    <div class="stat-name">Energy</div>
+                    <div class="stat-value" id="energy-value">100%</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="energy-bar" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message" id="message">Welcome to Pokémon Tamagotchi! Take care of your Pokémon!</div>
+
+        <div class="controls">
+            <button class="btn feed-btn" id="feed-btn">Feed</button>
+            <button class="btn play-btn" id="play-btn">Play</button>
+            <button class="btn sleep-btn" id="sleep-btn">Sleep</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
