@@ -16,6 +16,11 @@ A virtual pet game featuring Pokémon with persistent game state and nickname fu
 - 💾 **Auto-save progress** between sessions
 - ⏳ **24-hour persistence** (resets after a day)
 
+## Feature Requests
+Have an idea for improving this project? Please:
+- [Open a Feature Request Issue](https://github.com/narnacle/pokegotchi/issues/new?template=feature_request.md)
+- Or start a [Discussion](https://github.com/narnacle/pokegotchi/discussions)
+
 ## How to Play
 
 1. **Get a Pokémon**: Start with a random Pokémon
